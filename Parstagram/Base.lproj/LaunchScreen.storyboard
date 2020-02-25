@@ -15,16 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="abg-Li-Q6y">
-                                <rect key="frame" x="59" y="205" width="297" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="abg-Li-Q6y">
+                                <rect key="frame" x="59" y="205" width="296" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="Cow-fd-kIP"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="insta_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="We7-Zf-yNy">
-                                <rect key="frame" x="156" y="379" width="102" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="insta_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="We7-Zf-yNy">
+                                <rect key="frame" x="156" y="414" width="102" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="hfS-07-ccN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="We7-Zf-yNy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="BRp-e8-iSd"/>
+                            <constraint firstItem="abg-Li-Q6y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Isi-eu-Iry"/>
+                            <constraint firstItem="abg-Li-Q6y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="KDH-2e-rGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="We7-Zf-yNy" secondAttribute="trailing" constant="156" id="RVv-Fb-1iK"/>
+                            <constraint firstItem="We7-Zf-yNy" firstAttribute="top" secondItem="abg-Li-Q6y" secondAttribute="bottom" constant="17" id="WhR-5s-DPZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abg-Li-Q6y" secondAttribute="trailing" constant="59" id="nqI-js-X7A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
